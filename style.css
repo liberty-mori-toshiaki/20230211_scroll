@@ -1,33 +1,66 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100svh;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
 }
 
 .container {
-    width: 100%;
-    max-height: 100svh;
-    overflow: auto;
-    background: #222;
+  width: 100%;
+  max-height: 100svh;
+  overflow: auto;
+  background: #222;
 }
 
 /* .box_wrap {} */
 
-.box {
-    width: 100%;
-    min-height: calc(100svh + 200px);
-    background-image: url("https://source.unsplash.com/random/1920×1080");
-    background-size: cover;
-    background-repeat: no-repeat;
+.box1 {
+  width: 100%;
+  min-height: calc(100svh);
+  background: lavender;
+  display: flex;
+  align-items: center;
+}
+.box2 {
+  opacity: 0;
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  background: wheat;
+}
+.box3 {
+  opacity: 0;
+  transform: translateX(-100%);
+  display: flex;
+  align-items: center;
+  background: honeydew;
+}
+.box1 img,
+.box3 img {
+  width: 80%;
+  height: 100svh;
+  object-fit: cover;
+  margin-left: auto;
+}
+.box2 img {
+  width: 80%;
+  height: 100svh;
+  object-fit: cover;
+  margin-right: auto;
 }
 
 .box_filler {
-    min-height: 1000px;
+  min-height: 1000px;
 }
 
 .container::-webkit-scrollbar {
-     display: none;
+  display: none;
+}
+
+.slideIn {
+  transition: 1.5s;
+  opacity: 1;
+  transform: translateX(0);
 }
