@@ -18,7 +18,7 @@ body {
 
 .box {
     width: 100%;
-    min-height: 800px;
+    min-height: calc(100svh + 200px);
     background-image: url("https://source.unsplash.com/random/1920×1080");
     background-size: cover;
     background-repeat: no-repeat;
